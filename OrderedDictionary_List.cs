@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Collections.OrderedDictionary
 {
-    public partial class OrderedDictionary<TKey, TValue> : IList<KeyValuePair<TKey, TValue>>
+    public partial class OrderedDictionary<TKey, TValue> : IList<KeyValuePair<TKey, TValue>>, IReadOnlyList<KeyValuePair<TKey, TValue>>
     {
         /// <summary>
         /// Gets or sets the element at the specified index as a key-value pair.
